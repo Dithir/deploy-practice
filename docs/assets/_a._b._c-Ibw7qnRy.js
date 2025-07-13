@@ -1,0 +1,1 @@
+import{w as r,o as n}from"./chunk-QMGIS6GS-CjJd92Eu.js";const i=r(function(s){const{params:{a:t,b:a,c:o}}=s;return n.jsxs("p",{children:["This is a dynamic route with parametes: ",t,", ",a,", ",o]})});export{i as default};

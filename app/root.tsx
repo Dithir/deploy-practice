@@ -5,6 +5,7 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  NavLink
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -42,7 +43,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return <>
+
+      <header className="w-full h-20 bg-gray-500">
+          <h1>Data Viewer App</h1>
+          <nav className="flex gap-3">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/rows">Rows</NavLink>
+            <NavLink to="/rows/1">Row 1</NavLink>
+            <NavLink to="/rows/2">Row 2</NavLink>
+          </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer className="w-full h-10 bg-gray-500">Footer</footer>
+  
+  </>;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
@@ -72,4 +89,8 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       )}
     </main>
   );
+}
+
+export function HydrateFallback() {
+  return <p>Loading Rows...</p>;
 }

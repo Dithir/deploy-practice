@@ -1,0 +1,1 @@
+import{w as n,o}from"./chunk-QMGIS6GS-CjJd92Eu.js";function e({params:{rowId:t}}){return[{title:`Row ${t}`},{name:"description",content:"Directory"}]}const i=n(function({params:{rowId:r}}){return o.jsx("div",{children:o.jsxs("p",{children:["Dynamic route this is Row ",r," "]})})});export{i as default,e as meta};

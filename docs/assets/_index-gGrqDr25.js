@@ -1,0 +1,1 @@
+import{w as t,o as e}from"./chunk-QMGIS6GS-CjJd92Eu.js";function r({}){return[{title:"Uwu"},{name:"description",content:"Welcome to React Router!"}]}const i=t(function(){return e.jsx(e.Fragment,{children:e.jsx("div",{children:"Welcome to the Home Page"})})});export{i as default,r as meta};
